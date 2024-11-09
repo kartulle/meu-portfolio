@@ -93,6 +93,7 @@
   .skills-container {
     align-self: end; /* Alinha o conteúdo ao final da segunda row */
     justify-self: center; /* Alinha o conteúdo ao final horizontalmente */
+    margin: 0;
   }
 }
 
@@ -105,9 +106,16 @@
   .skills-container img{
     width: 50px;
     height: 50px;
+    margin: 5px;
   }
 
   .imagem-principal{
     padding: 25px;
+  }
+}
+
+@media (max-width: 368px){
+  .skills-container img{
+    margin: 0;
   }
 }
