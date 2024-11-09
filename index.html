@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/carousel.css">
+
+  <style>
+    @font-face {
+      font-family: 'NotoSans_online_security';
+      src: url('assets/fonts/noto-sans-regular.woff');
+    }
+
+    @font-face {
+      font-family: 'NotoSans_medium_online_security';
+      src: url('assets/fonts/noto-sans-medium.ttf');
+    }
+
+    @font-face {
+      font-family: 'NotoSans_bold_online_security';
+      src: url('assets/fonts/noto-sans-bold.woff');
+    }
+
+    @font-face {
+      font-family: 'NotoSans_semibold_online_security';
+      src: url('assets/fonts/noto-sans-semibold.ttf');
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="custom-header">
+    <div class="custom-logo"><b>Karol</b>.dev</div>
+    <nav class="custom-nav-container">
+      <ul class="custom-nav-links">
+        <li><a href="#carouselProjects">PROJETOS</a></li>
+        <li><a href="https://wa.me/5582981337181" target="_blank">CONTATO</a></li>
+      </ul>
+    </nav>
+    <div class="custom-menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const navbar = document.querySelector('.custom-nav-container');
+      navbar.classList.toggle('active');
+      this.classList.toggle('open');
+    });
+  </script>
+
+  <!-- Main Content -->
+  <main>
+    <section class="imagem-principal">
+      <div class="main-container">
+        <h1 class="main-text">TENHA SEU SITE COM A CARA DA SUA EMPRESA</h1>
+        <p class="secondary-text">Desenvolvimento de Sites Institucionais, Lojas Virtuais, Landing pages!</p>
+      </div>
+      <div class="skills-container">
+        <img src="assets/icons/laravel.svg" alt="Laravel Icon">
+        <img src="assets/icons/react.svg" alt="React Icon">
+        <img src="assets/icons/spring.svg" alt="Spring Icon">
+        <img src="assets/icons/docker.svg" alt="Docker Icon">
+        <img src="assets/icons/aws.svg" alt="AWS Icon">
+      </div>
+    </section>
+
+    <section class="about">
+      <h1 class="main-text">SERVIÇOS</h1>
+      <div class="custom-cards">
+        <div class="custom-card">
+          <img src="assets/icons/graph.svg" alt="Analysis Icon">
+          <h2 class="title-card">Análise Estratégica e Planejamento</h2>
+          <p>Planejamento baseado em dados e pesquisa de mercado para entender as necessidades do cliente e criar
+            soluções personalizadas que impulsionam resultados.</p>
+        </div>
+        <div class="custom-card">
+          <img src="assets/icons/pencil.svg" alt="Design Icon">
+          <h2 class="title-card">Design UX/UI Intuitivo</h2>
+          <p>Foco em uma experiência de usuário envolvente e interfaces intuitivas, garantindo uma navegação fácil e uma
+            apresentação visual impactante.</p>
+        </div>
+        <div class="custom-card">
+          <img src="assets/icons/screen.svg" alt="Development Icon">
+          <h2 class="title-card">Desenvolvimento Web</h2>
+          <p>Criação de sites e sistemas sob medida, adaptados aos objetivos e ao perfil do cliente, com tecnologia de
+            ponta e performance otimizada.</p>
+        </div>
+        <div class="custom-card">
+          <img src="assets/icons/cart.svg" alt="E-commerce Icon">
+          <h2 class="title-card">Lojas Virtuais que Vendem Mais</h2>
+          <p>Desenvolvimento de e-commerces focados em conversão, com experiência de compra simples e ferramentas de
+            vendas integradas para potencializar os resultados.</p>
+        </div>
+        <div class="custom-card">
+          <img src="assets/icons/shield.svg" alt="Security Icon">
+          <h2 class="title-card">Proteção e Segurança de Dados</h2>
+          <p>Implementação de práticas rigorosas de segurança para proteger dados e assegurar a integridade do sistema,
+            oferecendo tranquilidade aos clientes.</p>
+        </div>
+        <div class="custom-card">
+          <img src="assets/icons/phone.svg" alt="Support Icon">
+          <h2 class="title-card">Suporte Confiável e Proativo</h2>
+          <p>Atendimento constante e suporte técnico para manter seu site ou sistema sempre atualizado, seguro e pronto
+            para atender ao público.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-carousel">
+      <link rel="stylesheet" href="carousel.css">
+
+      <div id="carouselProjects" class="carousel slide" data-interval="false">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active radial-gradient-bg">
+            <div class="overlay container-slide">
+              <div class="container-infos">
+                <a href="https://minhaescola.educacao.al.gov.br/" class="btn-visit" target="_blank">Visite</a>
+                <div class="main-info">
+                  <h1 class="title-project">MINHA ESCOLA</h1>
+                  <p class="description">Desenvolvido para incentivar as escolas a promoverem tarefas que mantenham a
+                    limpeza e reforcem o trabalho em equipe entre os alunos.</p>
+                  <div class="warning">*Telas reduzidas para preservar informações confidenciais</div>
+                </div>
+                <div class="skills-project">
+                  <img src="/assets/icons/laravel.svg" alt="Laravel" class="inner-image m-1">
+                  <img src="/assets/icons/php.svg" alt="PHP" class="inner-image m-1">
+                  <img src="/assets/icons/bootstrap.svg" alt="Bootstrap" class="inner-image m-1">
+                  <img src="/assets/icons/javascript.svg" alt="JavaScript" class="inner-image m-1">
+                  <img src="/assets/icons/mysql.svg" alt="MySQL" class="inner-image m-1">
+                </div>
+              </div>
+              <div class="images-container">
+                <img src="/assets/images/login-mescola.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/cards-mescola.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/mescola3.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/mescola4.png" alt="Imagem interna do slide" class="inner-image m-1">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item radial-gradient-bg">
+            <div class="overlay container-slide">
+              <div class="container-infos">
+                <a href="https://escola10.educacao.al.gov.br/" class="btn-visit" target="_blank">Visite</a>
+                <div class="main-info">
+                  <h1 class="title-project">ESCOLA10 MÓDULO DO ALUNO</h1>
+                  <p class="description">Sistema para auxílio de alunos do programa Escola 10, permitindo consultas de
+                    status de pagamento e solicitações de ajuda.</p>
+                  <div class="warning">*Telas reduzidas para preservar informações confidenciais</div>
+                </div>
+                <div class="skills-project">
+                  <img src="/assets/icons/laravel.svg" alt="Laravel" class="inner-image m-1">
+                  <img src="/assets/icons/php.svg" alt="PHP" class="inner-image m-1">
+                  <img src="/assets/icons/bootstrap.svg" alt="Bootstrap" class="inner-image m-1">
+                  <img src="/assets/icons/javascript.svg" alt="JavaScript" class="inner-image m-1">
+                  <img src="/assets/icons/mysql.svg" alt="MySQL" class="inner-image m-1">
+                </div>
+              </div>
+              <div class="images-container">
+                <img src="/assets/images/moduloE10login.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/moduloE10consulta.png" alt="Imagem interna do slide" class="inner-image m-1">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item radial-gradient-bg">
+            <div class="overlay container-slide">
+              <div class="container-infos">
+                <a href="https://gppc.educacao.al.gov.br/" class="btn-visit" target="_blank">Visite</a>
+                <div class="main-info">
+                  <h1 class="title-project">GESTÃO DE PROCESSOS</h1>
+                  <p class="description">Digitalização e simplificação do gerenciamento de processos estaduais.</p>
+                  <div class="warning">*Telas reduzidas para preservar informações confidenciais</div>
+                </div>
+                <div class="skills-project">
+                  <img src="/assets/icons/laravel.svg" alt="Laravel" class="inner-image m-1">
+                  <img src="/assets/icons/php.svg" alt="PHP" class="inner-image m-1">
+                  <img src="/assets/icons/bootstrap.svg" alt="Bootstrap" class="inner-image m-1">
+                  <img src="/assets/icons/javascript.svg" alt="JavaScript" class="inner-image m-1">
+                  <img src="/assets/icons/mysql.svg" alt="MySQL" class="inner-image m-1">
+                </div>
+              </div>
+              <div class="images-container">
+                <img src="/assets/images/gppc1.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/gppc2.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/gppc3.png" alt="Imagem interna do slide" class="inner-image m-1">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item radial-gradient-bg">
+            <div class="overlay container-slide">
+              <div class="container-infos">
+                <a href="https://censo.educacao.al.gov.br/" class="btn-visit" target="_blank">Visite</a>
+                <div class="main-info">
+                  <h1 class="title-project">CENSO DE SERVIDORES</h1>
+                  <p class="description">Desenvolvido para agilizar o cadastro de servidores, antes feito em papel, o
+                    sistema integrou servidores de várias cidades e compartilha os dados com o sistema de perfil de
+                    lotação, ampliando sua utilidade.</p>
+                  <div class="warning">*Telas reduzidas para preservar informações confidenciais</div>
+                </div>
+                <div class="skills-project">
+                  <img src="/assets/icons/codeigniter.svg" alt="Laravel" class="inner-image m-1">
+                  <img src="/assets/icons/php.svg" alt="PHP" class="inner-image m-1">
+                  <img src="/assets/icons/bootstrap.svg" alt="Bootstrap" class="inner-image m-1">
+                  <img src="/assets/icons/javascript.svg" alt="JavaScript" class="inner-image m-1">
+                  <img src="/assets/icons/mysql.svg" alt="MySQL" class="inner-image m-1">
+                </div>
+              </div>
+              <div class="images-container">
+                <img src="/assets/images/censo1.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/censo2.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/censo3.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/censo4.png" alt="Imagem interna do slide" class="inner-image m-1">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="carousel-item radial-gradient-bg">
+            <div class="overlay container-slide">
+              <div class="container-infos">
+                <a href="https://lotacao.educacao.al.gov.br/" class="btn-visit" target="_blank">Visite</a>
+                <div class="main-info">
+                  <h1 class="title-project">PERFIL DE LOTAÇÃO</h1>
+                  <p class="description">Desenvolvido para otimizar o gerenciamento de servidores no
+                    estado de Alagoas,
+                    facilitando o direcionamento de servidores para diferentes unidades administrativas
+                    (GERES) conforme
+                    as demandas específicas de cada uma.</p>
+                  <div class="warning">*Telas reduzidas para preservar informações confidenciais</div>
+                </div>
+                <div class="skills-project">
+                  <img src="/assets/icons/laravel.svg" alt="Laravel" class="inner-image m-1">
+                  <img src="/assets/icons/php.svg" alt="PHP" class="inner-image m-1">
+                  <img src="/assets/icons/bootstrap.svg" alt="Bootstrap" class="inner-image m-1">
+                  <img src="/assets/icons/javascript.svg" alt="JavaScript" class="inner-image m-1">
+                  <img src="/assets/icons/mysql.svg" alt="MySQL" class="inner-image m-1">
+                </div>
+              </div>
+              <div class="images-container">
+                <img src="/assets/images/lotacao1.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/lotacao2.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/lotacao3.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/lotacao4.png" alt="Imagem interna do slide" class="inner-image m-1">
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="carousel-item radial-gradient-bg">
+            <div class="overlay container-slide">
+              <div class="container-infos">
+                <a href="https://github.com/kartulle/semana-Front-end" class="btn-visit" target="_blank">Visite</a>
+                <div class="main-info">
+                  <h1 class="title-project">CLUBE DE DUNGEONS & DRAGONS</h1>
+                  <p class="description">O sistema apresenta uma coleção exclusiva de imagens e vídeos de
+                    Stranger Things e
+                    permite inscrições para um clube de D&D. Ao clicar no primeiro botão, as imagens se
+                    invertem e a cor
+                    principal do sistema muda, revelando uma atmosfera sombria inspirada no submundo da
+                    série.</p>
+                  <div class="warning">*Desenvolvido para fins de aprendizado</div>
+                </div>
+                <div class="skills-project">
+                  <img src="/assets/icons/react.svg" alt="Laravel" class="inner-image m-1">
+                  <img src="/assets/icons/javascript.svg" alt="JavaScript" class="inner-image m-1">
+                  <img src="/assets/icons/mysql.svg" alt="MySQL" class="inner-image m-1">
+                </div>
+              </div>
+              <div class="images-container">
+                <img src="/assets/images/ded1.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/ded2.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/ded3.png" alt="Imagem interna do slide" class="inner-image m-1">
+                <img src="/assets/images/ded4.png" alt="Imagem interna do slide" class="inner-image m-1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:email@exemplo.com?subject=Contato%20do%20site">Contate por email</a>
+    <p>© 2024 Karolaine. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="/js/jquery-3.5.1.slim.min.js.transferir"></script>
+  <script src="/js/bootstrap.min.js.transferir"></script>
+  <script src="/js/popper.min.js.transferir"></script>
+
+</body>
+
+</html>
